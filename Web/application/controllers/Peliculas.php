@@ -29,21 +29,17 @@ class Peliculas extends CI_Controller {
 		$this->load->view('peliculas', $data);
 	}
 
-/* NO SE ALCANZO POR COSA DE TIEMPO
 	public function arrendar() {
-		$id= $this->input->post('id');
-		if() {
-
-		} else {
-
-		}
+		// Por tema de tiempo no alcancé implementar la logica aqui se usa el CRUD
+		$id = $this->input->post('id');
+		$data['id'] = $id;
+		$this->load->view('arrendar', $data);
 	}
 
 	public function devolver() {
-		if() {
+		$id = $this->input->post('id');
+		$data['id'] = $id;
+		$this->load->view('devolver', $data);
+	}
 
-		} else {
-
-		}
-	}*/
 }
