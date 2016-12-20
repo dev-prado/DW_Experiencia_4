@@ -87,8 +87,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  <?php foreach ($peliculas as $columna):?>
 
  <tr>
-<td><form method="post" action="peliculas/arrendar"><input type="hidden" value="<?=$columna->id ?>" name="id"><input type="submit" name="valor" value="+" /></form></td>
-<td><form method="post" action="peliculas/devolver"><input type="hidden" value="<?=$columna->id ?>" name="id"><input type="submit" name="valor" value="-" /></form></td>
+<td><form method="post" action="index.php/peliculas/arrendar"><input type="hidden" value="<?=$columna->id ?>" name="id"><input type="submit" name="valor" value="+" /></form></td>
+<td><form method="post" action="index.php/peliculas/devolver"><input type="hidden" value="<?=$columna->id ?>" name="id"><input type="submit" name="valor" value="-" /></form></td>
  <td><?=$columna->nombre ?></td>
  <td><?=$columna->sinopsis ?></td>
  <td><?=$columna->fecha_estreno ?></td>
