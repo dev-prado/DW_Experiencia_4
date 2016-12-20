@@ -6,6 +6,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>
   <p>Se arrienda la pelicula id: <?= $id ?></p>
   <br>
-  <a href="..">Volver</a>
+  <a href="../..">Volver</a>
 </body>
 </html>
